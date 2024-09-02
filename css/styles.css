@@ -1,0 +1,461 @@
+:root {
+    --text-color: #7D7987;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    /* background-color: black; */
+}
+
+main,
+nav>div,
+header section.banner,
+footer>div {
+    max-width: 1240px;
+    margin: 0px auto;
+
+}
+
+.deviders {
+    border-top: 3px solid #bbb;
+    width: 50px;
+}
+
+.logo {
+    width: 240px;
+
+}
+
+nav {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 15px 10px -15px #e9e4e4;
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid dark;
+}
+
+nav>div>ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav>div>ul>li {
+    list-style: none;
+}
+
+nav>div>ul>li>a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+nav>div>ul>li>a:hover {
+    text-decoration: underline;
+}
+
+a.active {
+    color: black;
+    font-weight: bold;
+}
+
+
+/* 
+===================================================
+Styles for the "Virtual Healthcare for You" section 
+===================================================
+*/
+
+.banner {
+    margin-top: 150px !important;
+}
+
+.banner,
+.leading-healthcare-providers,
+.download-apps {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.banner-content .title {
+    font-size: 48px;
+}
+
+.banner-content .description {
+    color: var(--text-color);
+    font-size: 21px;
+    line-height: 32px;
+    margin: 20px 0px;
+}
+
+.banner-content .btn,
+.learn-more-btn,
+.provider-contents .btn,
+.download-apps-content .btn,
+.view-all-btn {
+    border: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 55px;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+.banner-content .btn {
+    background-color: #458FF6;
+}
+
+.banner-content .btn:hover {
+    background-color: #1f6edd;
+}
+
+/* ==================================
+Styles for the "Our Services" section 
+=====================================*/
+
+.all-services-section,
+.leading-healthcare-providers,
+.download-apps {
+    margin: 110px 0px;
+}
+
+.all-services-section>.title,
+.all-services-section>.service-description {
+    text-align: center;
+}
+
+.all-services-section>.service-description {
+    color: var(--text-color)
+}
+
+.all-services-section>.title {
+    font-size: 36px;
+}
+
+.all-services-section>.service-description {
+    line-height: 30px;
+    font-size: 18px;
+    margin: 20px 0px 40px 0px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 45px;
+}
+
+.card {
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    cursor: pointer;
+}
+
+.card-container .card:hover {
+    background-color: rgb(241, 238, 238);
+}
+
+.card .card-title {
+    font-size: 24px;
+    margin: 18px 0px;
+}
+
+.card .card-icon {
+    height: 90px;
+    width: auto;
+}
+
+.card .card-description {
+    color: var(--text-color);
+    line-height: 28px;
+}
+
+.learn-more-btn,
+.provider-contents .btn,
+.download-apps-content .btn,
+.view-all-btn {
+    border: 1px solid #458FF6;
+    color: #458FF6;
+    background: white;
+    display: block;
+    margin: 50px auto;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover,
+.provider-contents .btn:hover,
+.download-apps-content .btn:hover,
+.view-all-btn:hover {
+    background-color: #458FF6;
+    color: white;
+}
+
+.all-services-section .deviders {
+    margin: 20px auto;
+}
+
+
+/* ==================================================
+Styles for the "Leading Healthcare Providers" section 
+=====================================================*/
+
+.leading-healthcare-providers {
+    gap: 120px;
+}
+
+.provider-contents .title,
+.download-apps .title {
+    font-size: 36px;
+}
+
+.leading-healthcare-providers .deviders,
+.download-apps-content .deviders {
+    margin: 20px 0px;
+}
+
+.provider-contents .description,
+.download-apps-content .description {
+    color: var(--text-color);
+    line-height: 30px;
+    margin: 30px auto;
+    font-size: 18px;
+}
+
+.provider-contents .btn,
+.download-apps-content .btn {
+    display: inline-block;
+    margin: 0;
+}
+
+.articles-section .title {
+    text-align: center;
+    font-size: 36px;
+
+}
+
+.articles-section .deviders {
+    margin: 30px auto 60px auto;
+}
+
+.articles-container {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+article img {
+    width: 400px;
+    border-top-right-radius: 20px;
+    border-start-start-radius: 20px;
+
+}
+
+article>div>p {
+    margin: 20px 0px;
+    color: var(--text-color);
+    line-height: 28px;
+}
+
+article>div>button {
+    background-color: white;
+    border: none;
+    color: #4089ED;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+article {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+article img {
+    width: 100%;
+}
+
+article div:nth-child(2) {
+    padding: 30px;
+}
+
+
+button.chat-button {
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    cursor: pointer;
+    background-image: linear-gradient(to right top, #5a98f2, #54a4f4, #54aff5, #5bb9f4, #67c3f3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+/* ==================================================
+Styles for the "Footer" section 
+=====================================================*/
+footer {
+    margin-top: 120px;
+    padding: 70px 0px;
+    color: white;
+    background-image: linear-gradient(to right top, #5a98f2, #54a4f4, #54aff5, #5bb9f4, #67c3f3);
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+div.footer-description p {
+    line-height: 28px;
+
+}
+
+footer ul {
+    list-style: none;
+    line-height: 37px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+
+    main,
+    nav>div,
+    header section.banner,
+    footer>div {
+        margin: 0px 20px;
+    }
+
+    .banner,
+    .leading-healthcare-providers,
+    .download-apps {
+        flex-wrap: wrap;
+    }
+
+    .banner img,
+    .leading-healthcare-providers img,
+    .download-apps img {
+        width: 100%;
+    }
+
+    div.banner>div,
+    div.leading-healthcare-providers>div,
+    div.download-apps>div {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .leading-healthcare-providers {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .line-break {
+        display: none;
+    }
+
+    .all-services-section,
+    .leading-healthcare-providers,
+    .download-apps {
+        margin: 50px 0px;
+    }
+
+    .articles-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    button.chat-button {
+        right: 30px;
+        bottom: 30px;
+    }
+
+    .footer>div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+
+    main,
+    nav>div,
+    header section.banner,
+    footer>div {
+        max-width: 720px;
+        margin: 20px auto;
+    }
+
+    .banner,
+    .leading-healthcare-providers,
+    .download-apps {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .articles-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner img,
+    .leading-healthcare-providers img,
+    .download-apps img {
+        width: 100%;
+    }
+
+    .footer>div {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .footer-description {
+        flex-basis: 100%;
+    }
+}
