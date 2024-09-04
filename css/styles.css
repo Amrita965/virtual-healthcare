@@ -300,8 +300,8 @@ button.chat-button {
     color: white;
     border: none;
     position: fixed;
-    bottom: 100px;
-    right: 100px;
+    bottom: 50px;
+    right: 50px;
     cursor: pointer;
     background-image: linear-gradient(to right top, #5a98f2, #54a4f4, #54aff5, #5bb9f4, #67c3f3);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
